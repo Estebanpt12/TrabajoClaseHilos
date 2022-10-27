@@ -9,7 +9,7 @@ public class Hilo1 extends Thread{
 
     @Override
     public void run(){
-        for (int i=0; i<=10;i++){
+        for (int i=0; i<arreglo.length;i++){
             System.out.println(arreglo[i]);
             try {
                 sleep(1000);
