@@ -1,4 +1,4 @@
-package hilos;
+package implJoin;
 
 public class NumeroFibonacci extends Thread{
 
@@ -16,5 +16,15 @@ public class NumeroFibonacci extends Thread{
             num1 = num2;
             num2 = suma;
         }
+        number = suma;
     }
+
+    public int getNumber() {
+        return this.number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
 }
