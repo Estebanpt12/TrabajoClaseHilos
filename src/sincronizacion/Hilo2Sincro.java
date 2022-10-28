@@ -3,8 +3,7 @@ package sincronizacion;
 public class Hilo2Sincro extends Thread {
     private String var;
 
-    public Hilo2Sincro(String var){
-        this.var = var;
+    public Hilo2Sincro(){
     }
 
     public String getVar(){
@@ -17,12 +16,7 @@ public class Hilo2Sincro extends Thread {
 
     @Override
     public void run() {
-        mostrarVariable(var);
-    }
-
-    public String mostrarVariable(String var){
         System.out.println(var);
         var = "";
-        return var;
     }
 }
